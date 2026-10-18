@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Contact Jorma Pekka.">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Jorma Pekka, home">
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contact">
+            <div class="contact-container">
+                <h1>Contact</h1>
+                <p class="contact-intro">Reach me directly or send a message below and I'll get back to you.</p>
+
+                <ul class="contact-channels">
+                    <li><span class="channel-label">Email:</span> <a href="mailto:jorma.pekka@example.com">jorma.pekka@example.com</a></li>
+                    <li><span class="channel-label">Phone:</span> +358 00 000 0000</li>
+                </ul>
+
+                <a href="CV.pdf" class="btn btn-primary cv-button" download>Download my CV</a>
+
+                <h2 class="form-title">Send a message</h2>
+
+                <form class="contact-form" action="https://formspree.io/f/xyekvenn" method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+                    <button type="submit">Send message</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
